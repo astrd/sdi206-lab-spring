@@ -71,6 +71,8 @@ public class MarksController {
 		model.addAttribute("markList", marksService.getMarks());
 		return "mark/list :: tableMarks";
 	}
+	
+	
 
 
 }
