@@ -20,7 +20,7 @@ public class MarksController {
 	@RequestMapping("/mark/list")	
 	public String getList(Model model) {
 		model.addAttribute("markList", marksService.getMarks());
-		return "mark/list";
+		return "mark/list"; 
 	}
   
 	@RequestMapping(value = "/mark/add", method = RequestMethod.POST)
