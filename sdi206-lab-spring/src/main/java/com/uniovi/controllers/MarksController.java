@@ -22,7 +22,7 @@ public class MarksController {
 		model.addAttribute("markList", marksService.getMarks());
 		return "mark/list";
 	}
-
+  
 	@RequestMapping(value = "/mark/add", method = RequestMethod.POST)
 	public String setMark(@ModelAttribute Mark mark) {
 
