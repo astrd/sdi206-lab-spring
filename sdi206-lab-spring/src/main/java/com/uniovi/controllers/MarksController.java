@@ -49,7 +49,7 @@ public class MarksController {
 		if (searchText != null && !searchText.isEmpty()) {
 			marks = marksService.searchMarksByDescriptionAndNameForUser(pageable, searchText, user);
 		} else {
-			marks = marksService.getMarksForUser(pageable, user);
+			model.addAttribute("markList", marksService.getMarksForUser(pageable, user) );
 		}
 		model.addAttribute("markList", marks.getContent());
 		model.addAttribute("page", marks);
